@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Oxygen', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(#FD3A69,#FD3A69 45%, #fff 45%,#FFF 100%);
+
+}
+.cardlayout{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background: #fff;
+    border-radius: 15px;
+    background: rgba(255,255,255,0.1);
+    border-top: 1px solid rgba(255,255,255,0.5);
+    backdrop-filter: blur(17px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+}
+
+.imgBox{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+    transform: translateY(40px) scale(0.55);
+    transform-origin: top;
+
+}
+
+.imgBox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 35px;
+    margin-top: 15px;
+
+}
+
+.content .userDetails{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;   
+
+}
+
+.content .userDetails h2{
+    color: black;
+    font-size: 1.3em;
+    font-weight: 900;
+
+}
+.content .userDetails span{
+    font-size: 0.7em;
+    color: #FD3A69;
+    font-weight: 500;
+}
+
+.socialMedia{
+    position: relative;
+    display: flex;
+    margin-top: 10px;
+}
+
+.socialMedia li{
+    list-style: none;
+    margin: 5px;
+}
+
+.socialMedia li a{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    border-radius: 50%;
+    background: transparent;
+    font-size: 1em;
+    color: #161616;
+    text-decoration: none;
+    box-shadow: 0 7px 15px rgba(0, 0, 0, 0.2);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+
+}
+
+.socialMedia li a:hover{
+    background: #FD3A69;
+    color: #fff;
+    font-size: 1.2em;
+}
